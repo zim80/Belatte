@@ -1,0 +1,132 @@
+.testimonials {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.testimonials__item {
+  margin-top: 60px;
+}
+
+.testimonials__card {
+  height: 425px;
+  background-color: #39312f;
+  display: flex;
+}
+
+.testimonials__img {
+  background-image: url('../img/img/realisticshots_coffee.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: initial;
+  width: 821px;
+  height: 425px;
+}
+
+.testimonials__slider {
+  width: 256px;
+  text-align: center;
+  margin: 100px auto;
+  position: relative;
+}
+
+.slider__quote {
+  font-size: 90px;
+  line-height: 21px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.03);
+  position: absolute;
+}
+
+.quote--start {
+  left: -60px;
+  top: -70px;
+}
+
+.quote--end {
+  font-size: 200px;
+  right: -70px;
+  bottom: -100px;
+}
+
+.slider__avatar {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.slider__pic {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.slider__name {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #f5d76e;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.slider__text {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.slider__controls {
+  position: absolute;
+  left: 82%;
+  bottom: 40px;
+  z-index: 100;
+  width: 160px;
+  //height: 18px;
+  text-align: center;
+  //font-size: 0;
+  transform: translateX(-50%);
+}
+
+.slider__controls-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  //width: 18px;
+  //height: 18px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:after {
+    content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  width: 9px;
+  height: 9px;
+  background:#fff;
+  border-radius: 50%;
+  }
+}
+
+.slider__controls-item--active {
+  &:after {
+    content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 11px;
+  height: 11px;
+  margin: -3px;
+  background-color: inherit;
+  border: 1px solid#ececec;
+  border-radius: 50%;
+  }
+}
